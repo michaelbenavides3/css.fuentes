@@ -7,14 +7,17 @@ p.especial{ /*con el punto llamo a las etiquetas de class*/
 }
 
 p.texto{
+
     color: slateblue;
 }
 
 div p { /*solamente se llama a div con hijo p*/
+    
     color: aquamarine;
 }
 
 div h2, div h3 {/*se llama a etuiquetas div, y sus dos hijos h2 con la , h3*/ 
+    
     color: brown;
 }
 
