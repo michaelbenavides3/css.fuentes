@@ -1,8 +1,8 @@
-#titulo {
+#titulo { /*con el # llamo a las eqtiquetas de id*/
     color: tomato;
 }
 
-p.especial{
+p.especial{ /*con el punto llamo a las etiquetas de class*/
     color: mediumseagreen;
 }
 
@@ -10,16 +10,16 @@ p.texto{
     color: slateblue;
 }
 
-div p {
+div p { /*solamente se llama a div con hijo p*/
     color: aquamarine;
 }
 
-div h2, div h3 {
+div h2, div h3 {/*se llama a etuiquetas div, y sus dos hijos h2 con la , h3*/ 
     color: brown;
 }
 
 * {
-    color: black;
+   /* color: black;*/
     font-size: 24px;
 }
 
@@ -89,5 +89,107 @@ daddaa
     text-decoration: overline;
     text-shadow: 3px 5px 5px blue;
 }
+/*acontinuacion este el verdadero orden que se tiene que seguir*/
+a:link {
+    color: blueviolet;
+}
 
+a:visited {
+    color: gray;
+}
 
+a:hover{ /*cuando se pasa el mouse por encima*/
+    color: yellow;
+}
+
+a:active{ /*cuando se entra en el link*/
+    color: red;
+}
+
+ul{
+    background-color: cyan;
+    /*list-style-type: ; tipos de item para las listas*/
+    list-style-type: none; /*para eliminar los puntos de la lista*/
+    padding-left: 0px;
+    /*list-style-position: inside;*/ /*alienear con el texto cuando se haga un salto de linea*/
+    
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse; /*quitar los espacios entre las columnas y celdas*/
+}
+
+th, td {
+    border: solid 1px #eee;
+    padding:  5px;
+}
+
+th{
+    background-color: tomato;
+    color: white;
+    text-align: left;
+}
+
+tr:nth-child(even){
+    background-color: #eee;
+} /*even= impar, odd=par*/
+
+tr:hover{ /*se puede llamar al hover dentro de la eqtiqua para saber que el color de la celda cambia cuando uno se posiciona encima de ella*/
+    background-color: #aaa;
+    cursor: pointer; /*icono de la mana*/
+}
+
+span{
+    display: block; /*sucede el salto de linea*/
+    /*display: none;*/ /*ocultar elementos*/
+    /*visibility: hidden;*/
+    max-width: ;width: 300px;
+    background-color: red;
+}
+
+.inline{
+    display: inline; /*queda en linea en un solo parrafo*/
+}
+
+#position{ /*posiciion de los textos*/
+    position: sticky;
+    left: 20px;
+    top: 25px;
+}
+
+.left{
+    float: left;
+    width: 200px;
+    height: 200px;
+}
+
+.right{
+    float: right;
+}
+
+.container{
+    width: 200px;
+}
+
+.column{
+    /*border: solid 1px #ddd;*/
+    /*border-radius: 5px;*/
+    margin: 0 ;
+    padding: 10px 0;
+    width: 33.3%;
+}
+
+.inline-block{
+    display: inline-block;
+    height: 55px;
+    background-color: red;
+}
+
+.center{
+    padding: 50px 0;
+    text-align: center;
+    width: 200px;
+    margin: 0 auto;
+    background-color: aqua;
+}
