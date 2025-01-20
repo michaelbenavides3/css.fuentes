@@ -1,0 +1,93 @@
+#titulo {
+    color: tomato;
+}
+
+p.especial{
+    color: mediumseagreen;
+}
+
+p.texto{
+    color: slateblue;
+}
+
+div p {
+    color: aquamarine;
+}
+
+div h2, div h3 {
+    color: brown;
+}
+
+* {
+    color: black;
+    font-size: 24px;
+}
+
+/*esto es un prueba es solo un comentario*/
+
+/*
+esto es un comentario que tienes mcuash linena
+dadada
+da
+daddaa
+*/
+/*
+.color {
+    color: #ff0000;
+}
+.color{
+    color: rgb(0, 255, 255);
+}
+*/
+
+.color{
+    /*border: 5px red outset;*/
+    /*dotted
+    dashed
+    solid
+    double
+    (elementos tridemencionales: 
+    groove
+    ridge
+    inset
+    outset )
+    none
+    hidden
+    */
+    border-style: solid;
+    border-color: blue;
+    border-radius: 5px;
+    border-width: 2rem;
+}
+
+#fondo {
+    background-color: rgba(255, 0, 0);
+    /*opacity: 0.3;*/
+    height: 200px;
+    background-image: url("cris.png");
+    background-size: 100px 100px;
+    /*background-repeat: no-repeat;*/
+    /*background-repeat: repeat-x;*/
+    background-repeat: repeat-y;
+    background-position: center top;
+}
+
+.margen{
+    background-color: chocolate;
+    margin: 15px;
+    padding: 30px 15px 5px;
+    border: solid 1px black;
+    height: 100px;
+    width: 50px;
+    overflow: scroll;
+    outline: 1px solid red;
+}
+
+.text{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+    text-decoration: overline;
+    text-shadow: 3px 5px 5px blue;
+}
+
+
